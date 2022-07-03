@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --preto: #252525;
+    --branco: #ffffff;
+    --cinza-escuro: #474747;
+    --cinza-claro: #5f5f5f;
+    --laranja: #e08235;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none; 
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--preto);
+    color: var(--branco);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    z-index: 999;
+}
+.botao_retorno img{
+    margin-left: .7rem;
+    width: 30px;
+}
+header h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+}
+.principal{
+    padding-bottom: 4rem;
+}
+.passos{
+    position: fixed;
+    width: 100%;
+    padding: 3.5rem 0 .7rem;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.passos img{
+    width: 220px;
+}
+.itens_carrinho{
+    padding: 7rem 1rem 1rem;
+}
+.itens_carrinho h2{
+    padding: 1rem 0;
+    font-size: 18px;
+    color: var(--cinza-escuro);
+    font-weight: lighter;
+}
+.itens_carrinho p{
+    text-align: center;
+    font-weight: bold;
+    color: var(--cinza-escuro);
+}
+.notas{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+.notas label{
+    padding: .5rem 0;
+}
+.notas input{
+    width: 90%;
+    border: 1px solid var(--laranja);
+    border-radius: 0.5rem;
+    height: 2rem;
+    padding: 0 1rem;
+    outline: none;
+}
+.preco_box{
+    margin-top: .5rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cinza-claro);
+    color: var(--branco);
+}
+.preco h2, .preco h3{
+    font-weight: lighter;
+    padding: .5rem 0;
+}
+.valores{
+    text-align: right;
+}
+.valores h2, .valores h3{
+    padding: .5rem 0;
+}
+.total_box{
+    margin-top: .5rem;
+    background-color: #ccc;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.pagamento{
+    padding: 1rem;
+}
+.pagamento h2{
+    font-size: 18px;
+    font-weight: lighter;
+    padding: .5rem 0 1rem;
+}
+.pagamento input{
+    margin-top: .5rem;
+    width: 90%;
+    height: 2rem;
+    padding: 0 1rem;
+    text-align: center;
+    border: 1px solid var(--laranja);
+    border-radius: .5rem;
+}
+.rodape{
+    background-color: var(--branco);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    box-shadow: 1rem 1rem 1rem .6rem;
+    z-index: 999;
+}
+.rodape a{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    text-decoration: none;
+}
+.rodape button{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 2rem;
+    margin: .5rem 0;
+    background-color: var(--laranja);
+    border: none;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    color: var(--branco);
+    outline: none;
+    cursor: pointer;
+}

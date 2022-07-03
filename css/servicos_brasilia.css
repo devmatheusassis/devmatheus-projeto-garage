@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --preto: #252525;
+    --branco: #ffffff;
+    --cinza-escuro: #474747;
+    --cinza-claro: #5f5f5f;
+    --laranja: #e08235;
+    font-family: 'Montserrat', sans-serif;
+    user-select: none; 
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--preto);
+    color: var(--branco);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+.botao_retorno img{
+    margin-left: .7rem;
+    width: 30px;
+}
+header h1{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: lighter;
+    text-align: center;
+}
+.principal{
+    padding: 2rem 0 6rem;
+}
+.imagem_capa img{
+    width: 100%;
+    border-radius: 0 0 2rem 2rem;
+}
+.pronta_entrega h2{
+    padding: 1rem;
+    font-size: 15px;
+    color: var(--cinza-escuro);
+}
+.produto_card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: .1rem 0 2rem .1rem;
+    padding: 1rem 0;
+}
+.produto_card p{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    padding: .4rem 0;
+}
+
+.entrega_agendada h2{
+    padding: 1rem;
+    font-size: 15px;
+    color: var(--cinza-escuro);
+}
+.produto_card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: .1rem 0 2rem .1rem;
+    padding: 1rem 0;
+}
+.produto_card p{
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+    padding: .4rem 0;
+}
+
+
+
+.rodape{
+    background-color: var(--branco);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 0;
+    box-shadow: 1rem 1rem 1rem .6rem;
+    z-index: 999;
+}
+.rodape a{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    text-decoration: none;
+}
+.rodape button{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    height: 2rem;
+    margin: .5rem 0;
+    background-color: var(--laranja);
+    border: none;
+    border-radius: .5rem;
+    text-transform: uppercase;
+    color: var(--branco);
+    outline: none;
+    cursor: pointer;
+}
